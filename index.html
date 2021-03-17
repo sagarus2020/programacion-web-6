@@ -6,42 +6,95 @@ and open the template in the editor.
 -->
 <html>
     <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="estilo.css">
         <title>Pagina de Presentacion de Programacion Web</title>
            <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-     <body>
-
-        <h1 style="color:red">JUAN PABLO CARDENAS QUIÑONEZ</h1>
+     <body class="p-3 mb-2 bg-secondary bg-gradient text-white">
+      <div class="border border-white p-3 mb-2 bg-dark bg-gradient text-white rounded">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-gradient rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi hoja de vida</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+  <br>
+<div class="d-grid gap-3">
+         <div class="p-2 bg-secondary bg-gradient border">  
+        <h1 >JUAN PABLO CARDENAS QUIÑONEZ</h1>
+        </div>
+         <div class="p-2 bg-secondary bg-gradient border"> 
         <h2>Fecha de Nacimiento: 03/03/2001</h2>
+      
         <p>Soy ingeniero de sistemas bilingue y busco dedicarme a la creacion de videojuegos</p>
         <p>Apesar de tener dificultades el verme como un desarrollador a futuro en videojuegos me ayuda a seguir en la carrera y a motivarme </p>
+        </div>
+         <div class="p-2 bg-secondary bg-gradient border">
         <h3>Mis hobbies</h3>
+
         <ul>
           <li>jugar videojuegos</li>
           <li>dibujar pixelart</li>
           <li>modelado 3d en blender</li>
         </ul>
+        </div>
+        <div class="p-2 bg-secondary bg-gradient border">
         <h3>Mis películas y series favoritas</h3>
         <ul>
           <li>Bionicle</li>
           <li>Warcraft</li>
           
         </ul>
-        
+        </div>
+        <div class="p-2 bg-secondary bg-gradient border">
         <h3>Mi canción favorita</h3>
         <p>knight of the wind</p>
         <audio controls>
         <source src="knight-of-the-wind.mp3" type="audio/mpeg">
         </audio>
+        </div>
         <style>
 table, th, td {
   border: 1px solid black;
 }
 </style>
-   
+    <div class="p-3 mb-2 bg-secondary bg-gradient text-white rounded border">
  <h3>Mis materias favoritas</h3>
-        <table>
+
+        <table  >
   <tr>
     <th>Materia</th>
     <th>Nota</th>
@@ -73,17 +126,24 @@ table, th, td {
     <td>El comienzo en cuanto a programacion</td>
   </tr>
  
-</table>
-  <ul>
-    <li><a href="contacto.html">contacto</a></li>     
-    <li><a href="https://twitter.com/SAGARUS20">Twitter</a></li>
-    <li><a href="https://t.co/xKKmeOj93H?amp=1">Patreon</a></li>
+
+</table >
+</div>
+<div class="p-2 bg-secondary bg-gradient border">
+  <h3>Comunicacion</h3>
+  <ul >
+    <li><a  class="text-white" href="contacto.html">contacto</a></li>     
+    <li><a  class="text-white" href="https://twitter.com/SAGARUS20">Twitter</a></li>
+    <li><a  class="text-white" href="https://t.co/xKKmeOj93H?amp=1">Patreon</a></li>
      
    </ul>
-
-      <img src="https://pbs.twimg.com/media/EuZmGghXYAYi1yy?format=jpg&name=large" alt="Juan :v"  style="width:500px;height:600px;">  
-     
+ </div>
+<div class="p-2 bg-secondary bg-gradient border">
+  <h3>Arte hecho por mi</h3>
+      <img class="img-thumbnail " src="https://pbs.twimg.com/media/EuZmGghXYAYi1yy?format=jpg&name=small" alt="Juan :v"  style="width:500px;height:600px;">  
+      <img class="img-thumbnail " src="https://pbs.twimg.com/media/Evp_qxkXcAcQhi9?format=jpg&name=small" alt="Juan :v"  style="width:500px;height:600px;">  
+</div>
  
-
+      </div>
     </body>
 </html>
