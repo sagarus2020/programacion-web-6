@@ -1,33 +1,18 @@
 body{
 	.bg-secondary.bg-gradient
 }
-h3{
+h3,h2,h1{
 	  padding: 20px;
 	  border-radius: 25px;
-	
+	width: 50%;
 	background: rgb(70,70,70);
 background: linear-gradient(0deg, rgba(70,70,70,1) 27%, rgba(101,101,101,1) 100%, rgba(255,255,255,1) 100%);
 }
-h2{
 
-	  padding: 20px;
-	  border-radius: 25px;
-	
-	background: rgb(70,70,70);
-background: linear-gradient(0deg, rgba(70,70,70,1) 27%, rgba(101,101,101,1) 100%, rgba(255,255,255,1) 100%);
-}
-h1{
-	
-	  padding: 20px;
-	  border-radius: 25px;
-	
-	background: rgb(70,70,70);
-background: linear-gradient(0deg, rgba(70,70,70,1) 27%, rgba(101,101,101,1) 100%, rgba(255,255,255,1) 100%);
-}
 label{
 	padding: 20px;
 	  border-radius: 25px;
-	
+	width: 200px;
 	background: rgb(70,70,70);
 background: linear-gradient(0deg, rgba(70,70,70,1) 27%, rgba(101,101,101,1) 100%, rgba(255,255,255,1) 100%);
 }
@@ -35,3 +20,25 @@ background: linear-gradient(0deg, rgba(70,70,70,1) 27%, rgba(101,101,101,1) 100%
 
 	font-family: arial;
 }
+
+/*Large devices only*/
+@media (min-width: 992px) {
+   
+img {
+	 border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 480px) and (max-width: 991px) {
+   img {
+	 border-radius: 4px;
+  padding: 5px;
+  width: 180px;
+  height: 180px;
+}
+  }
+
